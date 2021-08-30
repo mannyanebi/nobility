@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
-class Student(models.Model):
+class StudentProfile(models.Model):
     QUALIFICATIONS = [
         ('SECONDARY', 'Secondary'),
         ('BACHELORS', 'Bachelors'),

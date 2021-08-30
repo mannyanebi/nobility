@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet">
+
+    {% block css %}
+        <link rel="stylesheet" media="all" href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}">
+        <link rel="stylesheet" media="all" href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" media="all" href="{% static 'vendor/select2/select2.min.css' %}">
+        <link rel="stylesheet" media="all" href="{% static 'vendor/datepicker/daterangepicker.css' %}">
+        <link rel="stylesheet" media="all" href="{% static 'css/main.css' %}">
+
+    {% endblock css %}
+
+    <title> {% block title %}
+
+    {% endblock title %} | Nobility</title>
+  </head>
+  <body>
+
+
+  {% block container %}
+
+  {% endblock container %}
+
+    {% block js %}
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+        <script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>
+        <script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>
+        <script src="{% static 'js/global.js' %}"></script>
+    {% endblock js %}
+  </body>
+</html>
